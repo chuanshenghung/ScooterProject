@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "579877960553",
+    "firebase_url": "https://scooterproject2.firebaseio.com",
+    "project_id": "scooterproject2",
+    "storage_bucket": "scooterproject2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579877960553:android:e77abbbed805ff5b",
+        "android_client_info": {
+          "package_name": "com.example.gavinhung.scooterproject2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579877960553-c31bnnrrq9od82bbm945h1cq57p8jb4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gavinhung.scooterproject2",
+            "certificate_hash": "4dc513aa020df01345efc8d74317bc67daca8c13"
+          }
+        },
+        {
+          "client_id": "579877960553-v4bhls9qkk8m3a223a2ksuo4d52dtnq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrFuAyIJL4EPLBu0Jx2JypkrPeh_bOlk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579877960553-v4bhls9qkk8m3a223a2ksuo4d52dtnq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
