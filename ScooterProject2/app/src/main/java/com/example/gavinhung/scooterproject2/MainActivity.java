@@ -28,5 +28,56 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button bottom1 = (Button) findViewById(R.id.bottom1);
+
+        bottom1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        Button bottom2 = (Button) findViewById(R.id.bottom2);
+
+        bottom2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button bottom3 = (Button) findViewById(R.id.bottom3);
+
+        bottom3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button bottom4 = (Button) findViewById(R.id.bottom4);
+
+        bottom4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button bottom5 = (Button) findViewById(R.id.bottom5);
+
+        bottom5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this,PersonalActivity.class);
+
+                startActivity(intent);
+
+            }
+        });
+
+
+
+
     }
 }
