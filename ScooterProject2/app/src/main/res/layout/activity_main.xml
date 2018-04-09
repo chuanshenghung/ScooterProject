@@ -16,4 +16,50 @@
         android:text="登出"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="229dp" />
+
+    <Button
+        android:id="@+id/bottom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bottom2"
+        android:layout_below="@+id/SignOut"
+        android:layout_marginTop="90dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/bottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bottom3"
+        android:layout_below="@+id/bottom1"
+        android:layout_marginTop="78dp"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/bottom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SignOut"
+        android:layout_below="@+id/bottom2"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/bottom4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/SignOut"
+        android:layout_below="@+id/bottom3"
+        android:layout_marginTop="46dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/bottom5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom2"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/bottom2"
+        android:text="5" />
 </RelativeLayout>
