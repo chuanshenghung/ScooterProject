@@ -116,5 +116,5 @@
         android:layout_marginBottom="15dp"
         android:text="You agree to the terms of services"
         android:textColor="#ffffff"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
 </RelativeLayout>
