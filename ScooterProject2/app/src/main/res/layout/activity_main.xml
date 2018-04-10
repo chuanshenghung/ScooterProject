@@ -2,9 +2,9 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white">
 
     <RelativeLayout
@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:background="@android:color/black"/>
+        android:background="@drawable/mainactivity_mid_line"/>
 
     <RelativeLayout
         android:id="@+id/behavior"
@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:background="@android:color/black"/>
+        android:background="@drawable/mainactivity_mid_line"/>
 
     <RelativeLayout
         android:id="@+id/Speed"
@@ -101,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:background="@android:color/black"/>
+        android:background="@drawable/mainactivity_mid_line"/>
 
     <RelativeLayout
         android:id="@+id/status"
@@ -129,54 +129,22 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:background="@android:color/black"/>
+        android:background="@drawable/mainactivity_mid_line"/>
 
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
         android:id="@+id/Features"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:layout_alignParentBottom="true">
 
-        <Button
-            android:id="@+id/OBD"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottom_obd_1"
-            tools:ignore="ButtonStyle"/>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/Nav"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            design:menu="@menu/nav_menu"
+            />
 
-        <Button
-            android:id="@+id/Danger"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottom_danger_2"
-            tools:ignore="ButtonStyle"/>
 
-        <Button
-            android:id="@+id/Home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottom_main_3"
-            tools:ignore="ButtonStyle"/>
-
-        <Button
-            android:id="@+id/Components"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottom_element_4"
-            tools:ignore="ButtonStyle"/>
-
-        <Button
-            android:id="@+id/data"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bottom_personal_5"
-            tools:ignore="ButtonStyle"/>
-    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
 </RelativeLayout>
