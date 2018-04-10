@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
 	//SS  aassss ssssaaaaaa
 
-
+//ss
     private static final String TAG ="Facebook" ;
     //Element
     Button LoginActivity_SignUp , LoginActivity_LoginButton;
