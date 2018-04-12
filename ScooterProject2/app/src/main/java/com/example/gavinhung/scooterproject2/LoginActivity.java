@@ -36,6 +36,8 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Arrays;
 
@@ -71,6 +73,8 @@ public class LoginActivity extends AppCompatActivity {
         //Element
         LoginActivity_LoginButton = (Button) findViewById(R.id.LoginActivity_LoginButton);
         LoginActivity_SignUp = (Button) findViewById(R.id.LoginActivity_SignUp);
+
+
 
         //Firebase authStateListener
         auth=FirebaseAuth.getInstance();

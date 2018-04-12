@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "579877960553-u5nrdns65kdd0j9jj919kc6fu4egg3f3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gavinhung.scooterproject2",
+            "certificate_hash": "ad6c332eaa1edc90d463a89080179f2d38cf0c6a"
+          }
+        },
+        {
           "client_id": "579877960553-c31bnnrrq9od82bbm945h1cq57p8jb4p.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

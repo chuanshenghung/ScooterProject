@@ -10,13 +10,13 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button SignOut,Ps;
+    Button SignOut,Test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SignOut = (Button) findViewById(R.id.logout);
+        SignOut = (Button) findViewById(R.id.Logout);
 
         SignOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,16 +28,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Ps = (Button) findViewById(R.id.button2);
 
-        Ps.setOnClickListener(new View.OnClickListener() {
+        Test = (Button) findViewById(R.id.Test);
+
+        Test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,SignUpActivity.class);
+                Intent intent = new Intent(MainActivity.this,PersonalActivity.class);
                 startActivity(intent);
             }
         });
-
 
 
     }
