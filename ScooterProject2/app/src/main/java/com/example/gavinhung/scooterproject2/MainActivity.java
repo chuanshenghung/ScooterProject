@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button SignOut,Test;
+    Button SignOut,Test,Test2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,PersonalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Test2 =(Button) findViewById(R.id.button20);
+
+        Test2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,OBDActivity.class);
                 startActivity(intent);
             }
         });
