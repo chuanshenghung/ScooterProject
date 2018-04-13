@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="personalClass">
+        <item>輕型機車(50cc以下)</item>
+        <item>重型機車(250cc以下)</item>
+        <item>大型重機車(250cc以上)</item>
+    </array>
+</resources>

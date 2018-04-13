@@ -99,7 +99,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/SignUpButton"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_below="@+id/relativeLayout6"
@@ -112,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button3"
+        android:layout_alignStart="@+id/SignUpButton"
         android:layout_marginBottom="15dp"
         android:text="You agree to the terms of services"
         android:textColor="#ffffff"
