@@ -47,27 +47,30 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(SignUpActivity.this,"請輸入帳號密碼",Toast.LENGTH_LONG).show();
                 }else if(SignUpActivityPasswordText.length()<6){
                     Toast.makeText(SignUpActivity.this,"密碼長度，須大於6位",Toast.LENGTH_LONG).show();
-                }else if(SignUpActivityPasswordText.equals(SignUpActivityPassword2Text)){
-                    Toast.makeText(SignUpActivity.this,"兩次密碼必須相符",Toast.LENGTH_LONG).show();
                 }else{
-                    auth.createUserWithEmailAndPassword(SignUpActivityAddressText,SignUpActivityPasswordText)
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    String message = task.isComplete() ? "註冊成功" : "註冊失敗";
-                                    new AlertDialog.Builder(SignUpActivity.this)
-                                            .setMessage(message)
-                                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialogInterface, int i) {
-                                                    Intent MainActivity = new Intent(SignUpActivity.this, MainActivity.class);
-                                                    startActivity(MainActivity);
-                                                    SignUpActivity.this.finish();
-                                                }
-                                            })
-                                            .show();
-                                }
-                            });
+                    if(!SignUpActivityPasswordText.equals(SignUpActivityPassword2Text)){
+                        Toast.makeText(SignUpActivity.this,"兩次密碼必須相符",Toast.LENGTH_LONG).show();
+                    }else{
+                        auth.createUserWithEmailAndPassword(SignUpActivityAddressText,SignUpActivityPasswordText)
+                                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<AuthResult> task) {
+                                        String message = task.isComplete() ? "註冊成功" : "註冊失敗";
+                                        new AlertDialog.Builder(SignUpActivity.this)
+                                                .setMessage(message)
+                                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                                        Intent MainActivity = new Intent(SignUpActivity.this, MainActivity.class);
+                                                        startActivity(MainActivity);
+                                                        SignUpActivity.this.finish();
+                                                    }
+                                                })
+                                                .show();
+                                    }
+                                });
+                    }
+
                 }
             }
         });
