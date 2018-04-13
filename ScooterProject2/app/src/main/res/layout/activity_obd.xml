@@ -11,9 +11,6 @@
         android:id="@+id/toolbar5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,6 +26,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar5">
 
+        <ListView
+            android:id="@+id/OBDListView"
+            android:layout_width="357dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/BTResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="225dp"
+            android:layout_marginStart="163dp"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
     <TextView
@@ -45,7 +61,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bluetoothSet"
+        android:id="@+id/ReConnectButton"
         android:layout_width="78dp"
         android:layout_height="37dp"
         android:layout_marginTop="10dp"
@@ -58,17 +74,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/image_connect"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="24dp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/obdactivity_connect" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/image_unconnect"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginStart="52dp"
@@ -76,5 +93,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/obdactivity_unconnect" />
+
+    <Button
+        android:id="@+id/Restart"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:text="OBD連線"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
