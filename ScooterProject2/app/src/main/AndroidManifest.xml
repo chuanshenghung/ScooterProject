@@ -43,6 +43,11 @@
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".PersonalActivity"/>
 
+<<<<<<< HEAD
+=======
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SignUpActivity"></activity>
+>>>>>>> master
     </application>
 
 </manifest>

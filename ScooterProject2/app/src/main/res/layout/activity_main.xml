@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white">
 
     <android.support.v7.widget.Toolbar
@@ -61,6 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar2">
 
         <Button
+<<<<<<< HEAD
             android:id="@+id/Test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,3 +148,122 @@
 
 
 </android.support.constraint.ConstraintLayout>
+=======
+            android:id="@+id/logout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:text="登出"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mainactivity_mid_line"/>
+
+    <RelativeLayout
+        android:id="@+id/behavior"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mainactivity_top_background">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/mainactivity_top_good"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/behavior"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mainactivity_mid_line"/>
+
+    <RelativeLayout
+        android:id="@+id/Speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/mainactivity_speed_background"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/Speed"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mainactivity_mid_line"/>
+
+    <RelativeLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_above="@id/line4"
+        >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/mainactivity_bottom_danger_background"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_above="@id/Features"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mainactivity_mid_line"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/Features"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/Nav"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            design:menu="@menu/nav_menu"
+            />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
+>>>>>>> master

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="OBD"
+        android:icon="@drawable/bottom_obd_1"
+        />
+    <item
+        android:title="DANGER"
+        android:icon="@drawable/bottom_danger_2"
+        />
+    <item
+        android:title="HOME"
+        android:icon="@drawable/bottom_main_3"
+        />
+    <item
+        android:title="ELEMENT"
+        android:icon="@drawable/bottom_element_4"
+        />
+    <item
+        android:title="PERSONAL"
+        android:icon="@drawable/bottom_personal_5"
+        />
+
+</menu>
